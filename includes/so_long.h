@@ -6,7 +6,7 @@
 /*   By: cdapurif <cdapurif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/12 17:44:50 by cdapurif          #+#    #+#             */
-/*   Updated: 2021/08/25 14:21:31 by cdapurif         ###   ########.fr       */
+/*   Updated: 2021/08/28 21:10:44 by cdapurif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 # define SO_LONG_H
 
 # define BUFFER_SIZE 128
-# define WIDTH 640
-# define HEIGHT 360
 
-# include "../srcs/libft/libft.h"
-# include "../srcs/mlx/mlx.h"
+# include "../lib/libft/libft.h"
+# include "../lib/mlx/mlx.h"
 # include <unistd.h>
 # include <string.h>
 # include <stdio.h>
