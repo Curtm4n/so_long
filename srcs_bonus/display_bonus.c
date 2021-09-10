@@ -6,7 +6,7 @@
 /*   By: cdapurif <cdapurif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 23:24:48 by cdapurif          #+#    #+#             */
-/*   Updated: 2021/09/06 15:12:11 by cdapurif         ###   ########.fr       */
+/*   Updated: 2021/09/10 16:13:39 by cdapurif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,5 +124,6 @@ void	ft_display(t_info *info)
 	display_map(info, 0);
 	mlx_hook(info->window_ptr, 2, 1L << 0, my_key_hook, info);
 	mlx_hook(info->window_ptr, 33, 1L << 17, close_game, info);
+	mlx_hook(info->window_ptr, Expose, ExposureMask, minimize_event, info);
 	mlx_loop(info->mlx_ptr);
 }

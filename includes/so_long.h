@@ -6,7 +6,7 @@
 /*   By: cdapurif <cdapurif@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/12 17:44:50 by cdapurif          #+#    #+#             */
-/*   Updated: 2021/09/06 15:15:27 by cdapurif         ###   ########.fr       */
+/*   Updated: 2021/09/10 16:07:22 by cdapurif         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # include <stdio.h>
 # include <fcntl.h>
 # include <sys/errno.h>
+# include <X11/Xlib.h>
 
 typedef struct s_texture
 {
@@ -64,5 +65,6 @@ void		load_textures(t_info *info);
 void		free_texture(void *mlx_ptr, t_texture *texture);
 void		display_map(t_info *info);
 t_texture	*get_texture(char *file, t_info *info);
+int			minimize_event(void *info);
 
 #endif
